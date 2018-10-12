@@ -22,3 +22,14 @@ xs = {'a': 4, 'b': 3, 'c': 2, 'd': 1}
 print(sorted(xs.items(), key=lambda x: x[1]))
 import operator
 print(sorted(xs.items(), key=operator.itemgetter(1)))
+
+# The get() method on dicts
+# and its "default" argument
+name_for_userid = {
+    382: "Alice",
+    590: "Bob",
+    951: "Dilbert",
+}
+def greetings(userid):
+	return f'Hi {name_for_userid.get(userid, "there"}!'
+greetings(382)
