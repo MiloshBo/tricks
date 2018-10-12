@@ -52,3 +52,14 @@ Car(color='red' , mileage=3812.4)
 # Like tuples, namedtuples are immutable:
 my_car.color = 'blue'
 AttributeError: "can't set attribute"
+
+
+Larz60+ = '''
+an important thing to know is that you can get the xpath of any element from the firefox or chrome browser:
+
+    Highlight the data you want to find
+    Right click and select INspect Element
+    right click on html in inspector
+    Choose copy
+    select XPath
+'''
