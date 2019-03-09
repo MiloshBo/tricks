@@ -63,3 +63,22 @@ an important thing to know is that you can get the xpath of any element from the
     Choose copy
     select XPath
 '''
+
+
+# path 
+url = 'http://pythonscraping.com/files/inaugurationSpeech.txt'
+file_name = os.path.basename(url)
+response = requests.get(url)
+with open(file_name, 'wb') as f:
+	f.write(response.content)
+	
+with open(os.path.abspath("c:/Python36/kodovi/inauguration.txt"), "r") as file:
+	text = file.read()
+print(text[0:1000])
+
+s = 'Crème and Spicy jalapeño ☂ ⛄日本語のキ'
+with open('unicode.txt', 'w', encoding='utf-8') as f_out:
+	f_out.write(s)
+with open('unicode.txt', encoding='utf-8') as f:
+	data = f.read()
+	print(data)
