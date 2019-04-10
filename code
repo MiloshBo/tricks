@@ -82,3 +82,11 @@ with open('unicode.txt', 'w', encoding='utf-8') as f_out:
 with open('unicode.txt', encoding='utf-8') as f:
 	data = f.read()
 	print(data)
+
+
+# Dicts can't be sorted, but you can build a sorted list from them.
+A sorted list of dict values:
+sorted(d.values())
+A list of (key, value) pairs, sorted by value:
+from operator import itemgetter
+sorted(d.items(), key=itemgetter(1))
